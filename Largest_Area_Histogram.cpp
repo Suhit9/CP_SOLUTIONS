@@ -8,8 +8,6 @@ vector<int> rightSmallerEle(vector<int>&heights){
         while(!st.empty() && heights[st.top()]>=heights[i]){
             st.pop();
         }
-        
-        
          if(!st.empty()){
             ans[i]=st.top();
            
@@ -27,7 +25,6 @@ vector<int> leftSmallerEle(vector<int>&heights){
         while(!st.empty() && heights[st.top()]>=heights[i]){
             st.pop();
         }
-       
         if(!st.empty()){
             ans[i]=st.top();
            
